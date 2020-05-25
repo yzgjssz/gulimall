@@ -1,9 +1,9 @@
 package com.atguigu.gulimall.coupon;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
 
 /**
  * 1、如何使用Nacos作为配置中心统一管理配置
@@ -51,9 +51,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  *
  *
  */
-@MapperScan("com.atguigu.gulimall.coupon.dao")
-@SpringBootApplication
 @EnableDiscoveryClient
+@SpringBootApplication
 public class GulimallCouponApplication {
 
     public static void main(String[] args) {
